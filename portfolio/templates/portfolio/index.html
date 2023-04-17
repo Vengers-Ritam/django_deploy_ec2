@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <title>Django template</title>
+    <body>
+        <h1>TrainWithRitam</h1>
+        <p>I love to teach and train individuals</p>
+        <h2>These are my jobs</h2>
+{% for job in jobs.all %}  
+        <li>{{ job.company}} | {{ job.description}}</li>
+{% endfor %}
+<hr>
+<footer>Contact me: LinkedIn: ritammoharana1998<br>Instagram: ritam_moharana_98</footer>
+    </body>
+</html>
